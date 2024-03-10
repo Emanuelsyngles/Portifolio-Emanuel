@@ -1,6 +1,17 @@
+
+@import url(header.css);
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box
 }
 
-@import url(header.css);
+body {
+     background-color:var(--cor-body);
+}
+
+:root {
+    --cor-body: #07203D;
+    --cor-body-1:#1B1A20;
+    --branco: #FEFEFE;
+}

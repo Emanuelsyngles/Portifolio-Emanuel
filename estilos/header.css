@@ -1,0 +1,38 @@
+header {
+    font-family: 'Madimi One';
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.container > ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.container > ul > li{
+    list-style: none;
+}
+
+.container > ul > li > a {
+    text-decoration: none;
+    color: var(--branco);
+}
+
+.nome {
+    color: var(--branco);
+    font-weight: 600;
+    font-size: 30px;
+    border: 1px solid ;
+}
+
+.modos {
+    cursor: pointer;
+}
+
