@@ -35,3 +35,11 @@ header {
     cursor: pointer;
 }
 
+.robo_modos {
+    transition: 1s;
+}
+
+.frase_robo_1 {
+    background-color: var(--branco);
+    border-radius: 10px;
+}

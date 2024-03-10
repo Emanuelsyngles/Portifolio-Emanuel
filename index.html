@@ -12,10 +12,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap" rel="stylesheet">
     <title>Portifolio</title>
 </head>
-<body>
+<body id="body">
     <header>
         <div class="container">
-            <h3 class="nome">Emanuel<></h3>
+            <h3 class="nome">Emanuel <></h3>
             <ul>
                 <li><a href="#">Sobre</a></li>
                 <li><a href="#">Linkedin</a></li>
@@ -23,26 +23,34 @@
                 <li><a href="#">Projetos</a></li>
             </ul>
             <div class="modos">
-                <img src="imagens/sol.png" alt="botão sol">
-                <img src="imagens/lua.png" alt="botão lua">
+                <img onclick="claro()" src="imagens/sol.png" alt="botão sol">
+                <img onclick="escuro()" src="imagens/lua.png" alt="botão lua">
+                <div class="robo_modos">
+                    <img src="imagens/robo.png" alt="robo com dicas">
+                    <div class="frase_robo_1">
+                        <p>Clique para alternar entre modo modo claro e escuro</p>
+                    </div>
+                </div>
             </div>
         </div>
+        
     </header>
     <main>
-        <div class="container_1">
-            <img src="imagens/azul.png" alt="imagem-azul ilustrativa">
-        </div>
-        <div class="frase">
-            <h1>Emanuel leal</h1>
-            <p>Desenvolvedor front-end</p>
-        </div>
+            <div class="container_1">
+                <img class="azul" src="imagens/azul.png" alt="imagem-azul ilustrativa">
+            </div>
+            <div class="frase">
+                <h1>Emanuel leal</h1>
+                <p>Desenvolvedor front-end</p>
+            </div>
     </main>
-    
+
     <section>
         <div class="container_2">
             <img class="perfil" src="imagens/perfil.png" alt="imagem de perfil">
             <h4>Olá me chamo Emanuel leal Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum illum deleniti accusantium natus fuga sint autem velit sapiente at officiis corporis dolore perspiciatis inventore provident nemo, esse possimus odit in! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, amet illo vel nihil optio quasi minima minus facilis eligendi distinctio reprehenderit consequuntur fugiat dolor explicabo, repudiandae, maxime doloribus excepturi molestiae? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, enim. Fugiat magnam, rem assumenda voluptates cumque voluptas commodi suscipit? Modi, cum dolor enim consectetur alias sit reprehenderit eum nihil ea?</h4>
         </div>
     </section>
+    <script src="script/index.js"></script>
 </body>
 </html>

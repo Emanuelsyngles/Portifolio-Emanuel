@@ -8,6 +8,10 @@ main {
     margin-bottom: 10em;
 }
 
+.container_1 {
+    background-color: rgb(27, 80, 150);
+    border-radius: 66% 34% 68% 32% / 52% 63% 37% 48% ;
+}
 
 .frase {
     position: absolute;
@@ -23,3 +27,4 @@ main {
     text-align: center;
     font-size: 30px;
 }
+
