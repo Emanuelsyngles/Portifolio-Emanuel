@@ -1,0 +1,20 @@
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_2 {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 550px;
+    gap: 1em;
+}
+
+.perfil {
+    width: 50%;
+    background-color: rgb(27, 80, 150);
+    background-color: 10px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
