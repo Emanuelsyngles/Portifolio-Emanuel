@@ -34,10 +34,21 @@
         </div>
     </header>
     <div class="frase_robo_1">
-        <div><img src="imagens/robo.gif" alt="robo com dicas"></div>
+        <div><img class="robo_principal" src="imagens/robo.gif" alt="robo com dicas"></div>
         <p>OLÁ EU SOU O ALEX, ESTOU AQUI PARA TE AJUDAR!</p>
-        <audio id="audioplayer" src="audios/boavindas.mp3" ></audio>
+        <button class="comecar" onclick="tour()" alt="Começar o tour pelo portifólio">Começar o tour</button>
+        <button class="desligar" onclick="desligar()">Audio</button>
+        <audio id="audioplayer" src="audios/boasvindas.mp3"></audio>
+        <audio id="audiodespedida" src="audios/tchau.mp3"></audio>
+        <audio onclick="ajustarvolume()" id="musicamenu" src="audios/menu1.mp3"></audio>
         <abbr title="Pedir para o alex sair"><button class="button_robo" onclick="removeroboot()">X</button></abbr>
+    </div>
+    <div class="apresentacao">
+        <div>
+            <img src="imagens/robo.gif" alt="imagem ilustratia do alex">
+            <p>Falando sobre os links e o header</p>
+            <audio src="audios/audio2.mp3" id="musicamenu2"></audio>
+        </div>
     </div>
     <main>
         <div class="container_1">

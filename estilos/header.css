@@ -47,6 +47,8 @@ header {
     text-align: center;
     display: none;
     position: fixed;
+    animation: border 4s linear alternate-reverse infinite;
+    animation: transparent 2s linear forwards;
 }
 
 .button_robo {
@@ -54,8 +56,105 @@ header {
     border: none;
     outline: none;
     padding: 5px;
-    border-bottom-right-radius: 5px;
-    position: relative;
-    left: 164px;
+    border-radius: 2px;
     color: var(--branco);
+    animation: robotanimado 1s linear forwards;
+}
+
+.button_robo:hover {
+    background-color: rgb(214, 124, 7);
+}
+
+.robo_principal {
+    animation: robo .5s linear forwards;
+}
+
+.desligar {
+    background-color: rgb(0, 153, 255);
+    color: var(--branco);
+    border: none;
+    border-radius: 2Wpx;
+    animation: audio 1.5s linear forwards;
+}
+
+.comecar{
+    background-color: rgb(34, 116, 38);
+    color: var(--branco);
+    border: none;
+    border-radius: 2px;
+    padding: 2px;
+}
+
+.apresentacao {
+    display: flex;
+    justify-content: end;
+    display: none;
+    animation: tutor 1s linear forwards;
+    width: 100px;
+    text-align: center;
+    border-radius: 10px;
+    color: var(--branco);
+}
+
+@keyframes robotanimado {
+    0% {
+        width: 40px;
+        height: 40px;
+        background-color: rgb(255, 217, 0);
+      }
+      100% {
+        width: 20px;
+        height: 25px;
+        background-color: red;
+        transform: rotate(360deg);
+      }
+}
+
+@keyframes robo {
+    0% {
+        width: 0px;
+        height: 0px;
+    }
+    100%{
+        width: 44px;
+        height: 44px;
+    }
+}
+
+@keyframes border {
+    0% {
+        box-shadow: 2px 5px 14px 0px rgb(93, 93, 253);
+    }
+    100% {
+        box-shadow: 2px 5px 28px 0px rgb(121, 57, 180);
+    }
+}
+
+@keyframes transparent {
+    0%{
+        background-color: var(--branco);
+    }
+    100% {
+        background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(37, 78, 155));
+    }
+}
+
+@keyframes audio {
+    0% {
+        width: 20px;
+        height: 10px;
+    }
+    100%{
+        width: 40px;
+        height: 20px;
+    }
+}
+
+@keyframes tutor {
+    0%{
+        background-color: transparent;
+    }
+    100%{
+        background-color: rgb(84, 151, 8);
+    }
 }
