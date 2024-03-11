@@ -5,6 +5,13 @@ let audiotchau = document.querySelector('#audiodespedida')
 let musica = document.querySelector('#musicamenu')
 let musica2 = document.querySelector('#musicamenu2')
 let apresentacao = document.querySelector('.apresentacao')
+let nomeheader = document.querySelector('#nomeheader')
+let fala1 = document.querySelector('#fala1')
+let sobre = document.getElementById('sobre')
+let linkedin = document.getElementById('linkedin')
+let portifolio = document.getElementById('portifolio')
+let projetos = document.getElementById('projetos')
+let container = document.querySelector('.container')
 
 
 function claro() {
@@ -45,12 +52,41 @@ function tour() {
     frase.style.display = 'none'
     apresentacao.style.display = 'block'
     musica2.play()
+    fala1.play()
+    setTimeout(function() {
+        nomeheader.style.display = 'none'
+    }, 7000)
+    setTimeout(function() {
+        sobre.style.display = 'none'
+    },17000 )
+    setTimeout(function() {
+        linkedin.style.display = 'none'
+    }, 23000)
+    setTimeout(function() {
+        portifolio.style.display = 'none'
+    }, 30000)
+    setTimeout(function() {
+        projetos.style.display = 'none'
+    }, 37000)
+    setTimeout(function() {
+        body.style.background = '#014984'
+    }, 46000)
+    setTimeout(function() {
+        body.style.background = '#1f395a'
+    }, 47000)
+    setTimeout(function() {
+        nomeheader.style.display = 'block'
+        sobre.style.display = 'block'
+        linkedin.style.display = 'block'
+        portifolio.style.display = 'block'
+        projetos.style.display = 'block'
+    }, 59000)
 }
+
 
 musica2.addEventListener('play', function() {
     if(!musica.pause()) {
         musica.pause()
     }
 })
-
 

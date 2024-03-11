@@ -83,6 +83,7 @@ header {
     border: none;
     border-radius: 2px;
     padding: 2px;
+    animation:tempo 7s linear both;
 }
 
 .apresentacao {
@@ -132,10 +133,10 @@ header {
 
 @keyframes transparent {
     0%{
-        background-color: var(--branco);
+        background-color: transparent;
     }
     100% {
-        background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(37, 78, 155));
+        background-image: var(--branco);
     }
 }
 
@@ -155,6 +156,16 @@ header {
         background-color: transparent;
     }
     100%{
-        background-color: rgb(84, 151, 8);
+        background-image: linear-gradient(to bottom, rgb(29, 29, 29), rgb(37, 78, 155));
+    }
+}
+
+@keyframes  tempo {
+    0% {
+        background-color: transparent;
+        color: transparent;
+    }
+    100% {
+        background-color: rgb(34, 116, 38)
     }
 }
