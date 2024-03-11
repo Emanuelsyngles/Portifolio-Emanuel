@@ -13,3 +13,7 @@ function visual() {
     frase.style.display ='block'
     audio.play()
 }
+
+function removeroboot() {
+    frase.style.display = 'none'
+}

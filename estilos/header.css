@@ -36,7 +36,6 @@ header {
 }
 
 
-
 .frase_robo_1 {
     display: flex;
     justify-content: center;
@@ -47,4 +46,16 @@ header {
     font-size: 10px;
     text-align: center;
     display: none;
+    position: fixed;
+}
+
+.button_robo {
+    background-color: rgb(231, 19, 19);
+    border: none;
+    outline: none;
+    padding: 5px;
+    border-bottom-right-radius: 5px;
+    position: relative;
+    left: 164px;
+    color: var(--branco);
 }
