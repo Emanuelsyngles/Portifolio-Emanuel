@@ -35,6 +35,13 @@ header {
     cursor: pointer;
 }
 
+.mobile {
+    display: flex;
+    justify-content: start;
+    margin-top: -35px;
+    margin-left: 10px;
+    display: none;
+}
 
 .frase_robo_1 {
     display: flex;
@@ -169,3 +176,47 @@ header {
         background-color: rgb(34, 116, 38)
     }
 }
+
+
+@media (max-width:700px) {
+    .mobile {
+        display: block;
+        margin-top: 20px;
+        margin-left: 5px;
+    }
+    .modos  {
+        display: flex;
+        justify-content: end;
+        margin-top: -40px;
+        margin-right: 10px;
+        gap: 10px;
+    }
+    button {
+        background-color: rgb(217, 255, 0);
+        border: none;
+        border: 1px solid #9179ff;
+        border-radius: 5px;
+    }
+    #mobile {
+        display: none;
+    }
+    #menufechado {
+        display: none;
+    }
+    .mobile > div > ul {
+        background-color: var(--branco);
+        margin-left: -10px;
+    }
+    .mobile> div > ul > li{
+        list-style: none;
+        margin-bottom: 1em;
+    } 
+    .mobile> div > ul > li > a {
+        color: #000;
+        text-decoration: none;
+    }
+    .container {
+        display: none;
+    }
+}
+

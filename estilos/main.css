@@ -2,19 +2,9 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 1em;
-    font-family: 'Truculenta';
-    width: 100%;
+    flex-direction: column;
     margin-bottom: 10em;
-}
-
-.container_1 {
-    background-color: rgb(27, 80, 150);
-    border-radius: 66% 34% 68% 32% / 52% 63% 37% 48% ;
-}
-
-.frase {
-    position: absolute;
+    margin-top: 10em;
 }
 
 .frase > h1{
@@ -22,9 +12,32 @@ main {
     font-size: 90px;
 }
 
+.container_1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container_1 > h1 {
+    font-size: 50px;
+    color: var(--branco);
+    border-top: 1px solid var(--branco);
+    border: 1px solid var(--branco);
+    border-bottom: none;
+    border-left: none;
+    border-top-right-radius:10px ;
+}
+
+.container_1 > p {
+    color: var(--branco);
+    border: 1px solid var(--branco);
+    width: 190px;
+    border-bottom-left-radius: 10px;
+    border-top:none ;
+    border-right: none;
+    padding: 5px;
+}
+
 .frase > p {
     color: var(--branco);
     text-align: center;
     font-size: 30px;
 }
-

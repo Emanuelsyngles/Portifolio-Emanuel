@@ -12,6 +12,9 @@ let linkedin = document.getElementById('linkedin')
 let portifolio = document.getElementById('portifolio')
 let projetos = document.getElementById('projetos')
 let container = document.querySelector('.container')
+let menuaberto = document.getElementById('mobile')
+let menunone = document.getElementById('menuaberto')
+let menufechado = document.getElementById('menufechado')
 
 
 function claro() {
@@ -90,3 +93,17 @@ musica2.addEventListener('play', function() {
     }
 })
 
+
+//menu
+
+function abrirmenu() {
+    menuaberto.style.display = 'block'
+    menunone.style.display = 'none'
+    menufechado.style.display = 'block'
+}
+
+function fecharmenu() {
+    menuaberto.style.display = 'none'
+    menufechado.style.display = 'none'
+    menunone.style.display = 'block'
+}
