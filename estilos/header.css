@@ -47,7 +47,6 @@ header {
     text-align: center;
     display: none;
     position: fixed;
-    animation: border 4s linear alternate-reverse infinite;
     animation: transparent 2s linear forwards;
 }
 
@@ -119,6 +118,7 @@ header {
     100%{
         width: 44px;
         height: 44px;
+        transform: rotate(360deg);
     }
 }
 
